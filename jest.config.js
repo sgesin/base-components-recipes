@@ -4,7 +4,7 @@ module.exports = {
     ...jestConfig,
     resolver: '<rootDir>/bin/bcr-resolver.js',
     moduleNameMapper: {
-        '^@salesforce/label/(.*)$':
+        '^@salesforce/label/(.+)$':
             '<rootDir>/force-app/test/@salesforce/label/$1.js',
         '^force/(.+)$': '<rootDir>/force-app/test/force/$1/$1',
         '^force:mockDataLibrary$':
